@@ -23,7 +23,7 @@ jobs:
         run: npx playwright install --with-deps
 
       - name: Run Playwright tests
-        run: npx playwright test --reporter=html || echo "Tests failed"
+        run: npx playwright test --reporter=html
 
       - name: Move test-results into report folder
         if: always()
