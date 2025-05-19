@@ -24,6 +24,7 @@ export class PreferencesQuizPage {
      */
     async skipAll() {
         // Wait for the URL to match the specified regex pattern.
+        // This fails sometimes do to a weird redirect issue.
         await this.page.waitForURL(this.URLRegexToWait);
 
         // Click the "Skip All" button to skip the preferences quiz.
