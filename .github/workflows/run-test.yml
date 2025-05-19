@@ -25,10 +25,6 @@ jobs:
       - name: Run Playwright tests
         run: npx playwright test --reporter=html || echo "Tests failed"
 
-      - name: Generate HTML report
-        if: always()
-        run: npx playwright show-report --output=playwright-report
-
       - name: Move test-results into report folder
         if: always()
         run: mv test-results playwright-report/test-results || true

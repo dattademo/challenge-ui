@@ -10,7 +10,7 @@ export default defineConfig({
   testDir: './tests',
   
   /* Reporter to use. See https://playwright.dev/docs/test-reporters */
-  reporter: [['html', { outputFolder: 'playwright-report' }]], 
+  reporter: [['html', { outputFolder: 'playwright-report', open: 'never' }]],
   
   timeout: envConfig.executionTimeout,
   
