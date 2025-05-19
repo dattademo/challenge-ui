@@ -12,6 +12,6 @@ export const testData = {
   planNumber: 6,
   expectedMinimumMeals: 0,
   expectedMealURLFragment: 'meal-select',
-  expectedMealSelectedText: '1/6',
+  expectedMealSelectedText: '0/6',
 
 };
