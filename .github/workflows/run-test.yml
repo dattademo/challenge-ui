@@ -25,7 +25,7 @@ jobs:
       - name: Run Playwright tests
         run: npx playwright test --reporter=html --output=playwright-report  
 
-      - name: Generate Playwright HTML report
+      - name: Generate HTML report
         if: always()
         run: npx playwright show-report --output=playwright-report
 
