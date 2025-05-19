@@ -11,8 +11,8 @@ This repository contains UI tests with [Cypress](https://www.cypress.io/).
 ## 📦 Installation
 
 ```bash
-git clone https://github.com/dattademo/challenge-UI.git
-cd challenge-UI
+git clone https://github.com/dattademo/challenge-ui.git
+cd challenge-ui
 npm install
 npx playwright install
 
