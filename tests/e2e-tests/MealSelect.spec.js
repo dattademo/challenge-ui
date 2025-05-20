@@ -11,7 +11,7 @@ import { LoginPage } from '../../pages/LoginPage.js';
 import { MealSelectPage } from '../../pages/MealSelectPage.js';
 import { testData } from '../data/testData.js';
 
-test.describe('Meal Select Page', () => {
+test.describe('Meal Select Page Test', () => {
 
   test('Selected meals, Meals cards and URL are correct', async ({ page }) => {
 
