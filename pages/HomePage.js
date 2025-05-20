@@ -2,14 +2,16 @@
  * HomePage class represents the page object model for the home page.
  * It provides methods to interact with and validate elements on the home page.
  */
+
+import { timeouts } from '../tests/data/customTimeouts.js'; // Importing timeouts from a separate file.
 export class HomePage {
     /**
      * Constructor for the HomePage class.
      * @param {import('@playwright/test').Page} page - The Playwright page object used to interact with the browser.
      */
     constructor(page) {
-        this.MODAL_TIMEOUT = 35000; // Default timeout for modal operations.
-        this.MODAL_EXIT_TIMEOUT = 3000; // Timeout for waiting for the modal to be removed from the DOM.
+        this.MODAL_TIMEOUT = timeouts.longTimeout; // Default timeout for modal operations.
+        this.MODAL_EXIT_TIMEOUT = timeouts.shortTimeout; // Timeout for waiting for the modal to be removed from the DOM.
 
         this.page = page; // Playwright page object for browser interaction.
 

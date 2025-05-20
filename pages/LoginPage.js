@@ -2,6 +2,9 @@
  * LoginPage class represents the page object model for the login page.
  * It provides methods to interact with and validate elements on the login page.
  */
+
+import { timeouts } from '../tests/data/customTimeouts.js'; // Importing timeouts from a separate file.
+
 export class LoginPage {
     /**
      * Constructor for the LoginPage class.
@@ -9,7 +12,7 @@ export class LoginPage {
      */
     constructor(page) {
         this.page = page; // Playwright page object for browser interaction.
-        this.TIMEOUT = 3000; // Default timeout for waiting for elements.
+        this.TIMEOUT = timeouts.shortTimeout; // Default timeout for waiting for elements.
 
         // Locators for elements on the login page.
         this.iHaveAnAccountButton = page.getByTestId('login'); // Locator for the "I have an account" button.

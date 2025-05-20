@@ -2,6 +2,9 @@
  * PlanSelectPage class represents the page object model for the plan selection page.
  * It provides methods to interact with and validate elements on the plan selection page.
  */
+
+import { timeouts } from '../tests/data/customTimeouts.js'; // Importing timeouts from a separate file.
+
 export class PlanSelectPage {
     /**
      * Constructor for the PlanSelectPage class.
@@ -9,7 +12,7 @@ export class PlanSelectPage {
      */
     constructor(page) {
         this.page = page; // Playwright page object for browser interaction.
-        this.TIMEOUT = 2000; // Default timeout for waiting for elements.
+        this.TIMEOUT = timeouts.shortTimeout; // Default timeout for waiting for elements.
 
         // Locator for the "Continue" button on the plan selection page.
         this.continueButton = page.getByTestId('plan-select-continue-button');
